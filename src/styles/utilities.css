@@ -1,0 +1,13 @@
+
+@tailwind utilities;
+
+/* Any custom utility classes can go here if needed */
+/* For example: */
+/*
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+*/
+  

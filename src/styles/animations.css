@@ -1,0 +1,49 @@
+
+@layer base {
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes scaleIn {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+
+  @keyframes neon-glow {
+    0%, 100% {
+      text-shadow:
+        0 0 4px hsla(var(--secondary), 0.8),
+        0 0 8px hsla(var(--secondary), 0.6),
+        0 0 12px hsla(var(--secondary), 0.4);
+    }
+    50% {
+      text-shadow:
+        0 0 6px hsla(var(--primary), 0.9),
+        0 0 10px hsla(var(--primary), 0.7),
+        0 0 15px hsla(var(--primary), 0.5);
+    }
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.scale-in {
+  animation: scaleIn 0.3s ease-in-out;
+}
+
+.animate-neon-glow {
+   animation: neon-glow 4s ease-in-out infinite;
+}
+  

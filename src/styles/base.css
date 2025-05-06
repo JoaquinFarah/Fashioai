@@ -1,0 +1,71 @@
+
+@tailwind base;
+
+@layer base {
+  :root {
+    --background: 220 15% 95%;
+    --foreground: 220 10% 10%;
+    --card: 220 15% 95%;
+    --card-foreground: 220 10% 10%;
+    --popover: 220 15% 95%;
+    --popover-foreground: 220 10% 10%;
+    --primary: 330 100% 50%; /* Neon Pink */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 180 100% 50%; /* Neon Cyan */
+    --secondary-foreground: 240 10% 5%;
+    --muted: 220 10% 85%;
+    --muted-foreground: 220 5% 45%;
+    --accent: 200 100% 50%; /* Neon Blueish */
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 80% 55%; /* Bright Red */
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 10% 80%;
+    --input: 220 10% 80%;
+    --ring: 330 100% 50%; /* Neon Pink focus */
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 240 10% 4%; /* Very Dark Blue/Black */
+    --foreground: 210 20% 90%; /* Light Gray/Off-white text */
+    --card: 240 8% 8%; /* Slightly lighter dark */
+    --card-foreground: 210 20% 90%;
+    --popover: 240 10% 4%;
+    --popover-foreground: 210 20% 90%;
+    --primary: 330 100% 55%; /* Neon Pink */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 180 100% 55%; /* Neon Cyan */
+    --secondary-foreground: 240 10% 5%;
+    --muted: 240 5% 15%; /* Dark muted background */
+    --muted-foreground: 240 5% 55%; /* Lighter muted text */
+    --accent: 200 100% 55%; /* Neon Blueish */
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 90% 60%; /* Brighter Red */
+    --destructive-foreground: 0 0% 100%;
+    --border: 240 5% 25%; /* Darker border */
+    --input: 240 5% 20%; /* Darker input background */
+    --ring: 180 100% 55%; /* Neon Cyan focus ring */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+     scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground dark; /* Force dark mode for now */
+    font-feature-settings: "rlig" 1, "calt" 1;
+    @apply font-sans;
+    min-height: 100vh;
+  }
+   /* Ensure root div takes full height */
+  #root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+}
+  
