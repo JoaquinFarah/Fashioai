@@ -112,6 +112,9 @@ const LoginPage = () => {
             </CardTitle>
             <CardDescription className="text-cyber-muted pt-1">
               Access your personalized style hub
+              <p>
+                joaquinefarah@gmail.com - asdasd
+              </p>
             </CardDescription>
           </CardHeader>
 
