@@ -114,6 +114,7 @@ const LoginPage = () => {
               Access your personalized style hub
               <p>
                 mock: joaquinefarah@gmail.com - asdasd
+                mock: kaneda1204@gmail.com - asdasd
               </p>
             </CardDescription>
           </CardHeader>
